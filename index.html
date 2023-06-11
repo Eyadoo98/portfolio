@@ -13,32 +13,34 @@
 
     <!-- intro section -->
 
-    <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 relative overflow-hidden">
+    <div
+        class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900 relative overflow-hidden">
 
-        <nav class="w-full fixed top-0 bg-white px-16 z-10">
+        <!-- navbar -->
+        <nav class="w-full fixed top-0 bg-white dark:bg-slate-900 px-16 z-10">
             <div class="container mx-auto w-full py-5 flex justify-between items-center">
                 <div class="flex items-center gap-2">
                     <img src="images/logo.png" alt="Logo" class="w-8">
-                    <span class="text-2xl font-bold text-indigo-900">Portfolio.</span>
+                    <span class="text-2xl font-bold text-indigo-900 dark:text-white">Portfolio.</span>
                 </div>
-                <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm uppercase">
+                <ul class="hidden md:flex space-x-10 text-gray-600 dark:text-white font-bold text-sm uppercase">
                     <li class="hover:text-gray-500">
                         <a href="#">HomePage</a>
                     </li>
                     <li class="hover:text-gray-500">
-                        <a href="#">About Me</a>
+                        <a href="#about">About Me</a>
                     </li>
                     <li class="hover:text-gray-500">
-                        <a href="#">Services</a>
+                        <a href="#services">Services</a>
                     </li>
                     <li class="hover:text-gray-500">
-                        <a href="#">Works</a>
+                        <a href="#works">Works</a>
                     </li>
                     <li class="hover:text-gray-500">
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
-                <img src="images/moon.png" class="hidden md:block w-5 cursor-pointer" alt="Moon">
+                <img src="images/moon.png" id="moon" class="hidden md:block w-5 cursor-pointer" alt="Moon">
 
                 <div id="hamburger" class="md:hidden sm:flex space-y-1 cursor-pointer z-20">
                     <div class="w-6 h-0.5 bg-black"></div>
@@ -48,19 +50,19 @@
                 <ul id="menu"
                     class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center">
                     <li class="hover:text-gray-500">
-                        <a href="#">HomePage</a>
+                        <a id="hLink" href="#">HomePage</a>
                     </li>
                     <li class="hover:text-gray-500">
-                        <a href="#">About Me</a>
+                        <a id="hLink" href="#about">About Me</a>
                     </li>
                     <li class="hover:text-gray-500">
-                        <a href="#">Services</a>
+                        <a id="hLink" href="#services">Services</a>
                     </li>
                     <li class="hover:text-gray-500">
-                        <a href="#">Works</a>
+                        <a id="hLink" href="#works">Works</a>
                     </li>
                     <li class="hover:text-gray-500">
-                        <a href="#">Contact</a>
+                        <a id="hLink" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -69,32 +71,36 @@
 
         <!-- intro content -->
         <!-- image -->
-        <img class="absolute bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover" src="images/eyad2.jpg" alt="EyadLogo">
+        <img class="absolute bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover" src="images/eyad2.jpg"
+            alt="EyadLogo">
         <!-- circle -->
-        <div class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big -z-10 bg-indigo-900 rounded-full">
+        <div
+            class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big -z-10 bg-indigo-900 rounded-full">
         </div>
         <!-- animated  text -->
-        <div class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:text-6xl font-bold">
-            <span class="text-gray-600">Web Developer</span>
+        <div
+            class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:text-6xl font-bold">
+            <span class="text-gray-600 dark:text-white">Web Developer</span>
             <p id="text" class="text-red-500"></p>
         </div>
 
         <!-- texts Hi, I'm Eyad -->
-        <div class="hidden lg:flex flex-col gap-5 rounded-md shadow-xl absolute top-0 bottom-0 m-auto right-10 bg-white p-6 h-fit w-1/3">
-            <h1 class="text-4xl font-bold text-indigo-900">Hi, I'm Eyad </h1>
-            <p class="text-gray-400">
+        <div
+            class="hidden lg:flex flex-col gap-5 rounded-md shadow-xl absolute top-0 bottom-0 m-auto right-10 bg-white dark:bg-black dark:shadow-slate-800 p-6 h-fit w-1/3">
+            <h1 class="text-4xl font-bold text-indigo-900 dark:text-white">Hi, I'm Eyad </h1>
+            <p class="text-gray-400 dark:text-white">
                 with more than +2 years of experience in the field of web development, I have worked on many projects
                 using laravel , livewire , filament , tailwindCss , bootstrap , jquery , ajax , mysql , api , git
                 and more.
             </p>
             <a href="#contact" class="bg-indigo-600 text-white text-xl rounded-md font-bold px-3 py-2 w-fit">Hire Me</a>
         </div>
-        </div>
+    </div>
 
     </div>
     <!-- about section -->
-    <div>
-        <div class="container py-40 px-16 mx-auto flex gap-20">
+    <div class="px-4 dark:bg-slate-900" id="about">
+        <div class="container py-40 px-16 mx-auto flex flex-col-reverse md:flex-row items-center gap-20">
             <!-- left -->
             <div class="relative">
                 <img class="h-1/4 absolute top-0 left-0 -z-10" src="images/dots.png" alt="dots image">
@@ -102,20 +108,48 @@
                     <img src="images/Eyad.jpeg" alt="Eyad Image">
                 </div>
             </div>
-            
+
             <!-- right -->
 
             <div class="my-auto flex flex-col gap-3">
                 <h1 class="text-indigo-600 font-bold">ABOUT ME</h1>
-                <h1 class="text-3xl font-medium">BETTER FRONT-END</h1>
-                <h1 class="text-3xl font-medium">BETTER EXPERIENCE</h1>
-                <p class="text-gray-400">
+                <h1 class="text-3xl font-medium dark:text-white">Better Frontend</h1>
+                <h1 class="text-3xl font-medium dark:text-white">Better Backend</h1>
+                <p class="text-gray-400 dark:text-gray-100">
                     I made many project using Tailwind Css , filamentphp , livewire , laravel , bootstrap , jquery ,
-                    and more u can see them in my repo in git 
+                    and more u can see them in my repo in git
                 </p>
-                <h2 class="text-gray-400 font-medium">HTML</h2>
+                <h2 class="text-gray-400 dark:text-gray-100 font-medium">HTML</h2>
                 <div class="w-full bg-gray-200 h-1.5 rounded-md">
-
+                    <div class="w-full bg-indigo-700 h-1.5 rounded-md"></div>
+                </div>
+                <h2 class="text-gray-400 dark:text-gray-100 font-medium">Css</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                    <div class="w-5/6 bg-indigo-700 h-1.5 rounded-md"></div>
+                </div>
+                <h2 class="text-gray-400 dark:text-gray-100 font-medium">JavaScript</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                    <div class="w-4/6 bg-indigo-700 h-1.5 rounded-md"></div>
+                </div>
+                <h2 class="text-gray-400 dark:text-gray-100 font-medium">JQuery</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                    <div class="w-4/6 bg-indigo-700 h-1.5 rounded-md"></div>
+                </div>
+                <h2 class="text-gray-400 dark:text-gray-100 font-medium">Bootstrap</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                    <div class="w-5/6 bg-indigo-700 h-1.5 rounded-md"></div>
+                </div>
+                <h2 class="text-gray-400 dark:text-gray-100 font-medium">TailwindCss</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                    <div class="w-5/6 bg-indigo-700 h-1.5 rounded-md"></div>
+                </div>
+                <h2 class="text-gray-400 dark:text-gray-100 font-medium">Ajax</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                    <div class="w-5/6 bg-indigo-700 h-1.5 rounded-md"></div>
+                </div>
+                <h2 class="text-gray-400 dark:text-gray-100 font-medium">JSON</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                    <div class="w-5/6 bg-indigo-700 h-1.5 rounded-md"></div>
                 </div>
             </div>
         </div>
@@ -123,12 +157,198 @@
 
 
 
+    <!-- SERVICES -->
+    <div id="services" class="dark:bg-slate-900">
+        <div class="container mx-auto">
+            <div class="flex flex-col gap-3  items-center">
+                <!-- top -->
+                <h1 class="text-indigo-600 font-bold">SERVICES</h1>
+                <h1 class="text-3xl dark:text-gray-100">What Do I Offer?</h1>
+                <p class="md:w-1/2 px-4 md:px-0 text-center dark:text-gray-100 text-gray-600">
+                    My Approach is to create website as a professional who applies engineering principles and best
+                    practices to design, develop, and maintain software systems. and responsible for creating efficient,
+                    reliable, and scalable software solutions to meet specific requirements and make api for mobile apps
+                    as backend developer.
+                </p>
+            </div>
+            <div class="h-9"></div>
+            <!-- bottom -->
+
+            <div class="p-5 sm:p-0 flex flex-wrap">
+                <!-- card -->
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg my-3 md:my-10 p-5 flex flex-col gap-3">
+                    <img class="w-10" src="images/icon.png" alt="">
+                    <h1 class="font-medium text-lg dark:text-gray-100">FullStack Developer</h1>
+                    <p class="text-gray-400 dark:text-gray-100">
+                        I specialize in creating interactive websites for individuals and
+                        small businesses.
+                    </p>
+                    <a class="text-indigo-600 font-bold text-sm" href="">Read More</a>
+                </div>
+
+                <!-- card -->
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg my-3 md:my-10 p-5 flex flex-col gap-3">
+                    <img class="w-10" src="images/icon.png" alt="">
+                    <h1 class="font-medium text-lg dark:text-gray-100">FullStack Developer</h1>
+                    <p class="text-gray-400 dark:text-gray-100">
+                        I specialize in creating interactive websites for individuals and
+                        small businesses.
+                    </p>
+                    <a class="text-indigo-600 font-bold text-sm" href="">Read More</a>
+                </div>
+                <!-- card -->
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg my-3 md:my-10 p-5 flex flex-col gap-3">
+                    <img class="w-10" src="images/icon.png" alt="">
+                    <h1 class="font-medium text-lg dark:text-gray-100">FullStack Developer</h1>
+                    <p class="text-gray-400 dark:text-gray-100">
+                        I specialize in creating interactive websites for individuals and
+                        small businesses.
+                    </p>
+                    <a class="text-indigo-600 font-bold text-sm" href="">Read More</a>
+                </div>
+                <!-- card -->
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg my-3 md:my-10 p-5 flex flex-col gap-3">
+                    <img class="w-10" src="images/icon.png" alt="">
+                    <h1 class="font-medium text-lg dark:text-gray-100">FullStack Developer</h1>
+                    <p class="text-gray-400 dark:text-gray-100">
+                        I specialize in creating interactive websites for individuals and
+                        small businesses.
+                    </p>
+                    <a class="text-indigo-600 font-bold text-sm" href="">Read More</a>
+                </div>
+                <!-- card -->
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg my-3 md:my-10 p-5 flex flex-col gap-3">
+                    <img class="w-10" src="images/icon.png" alt="">
+                    <h1 class="font-medium text-lg dark:text-gray-100">FullStack Developer</h1>
+                    <p class="text-gray-400 dark:text-gray-100">
+                        I specialize in creating interactive websites for individuals and
+                        small businesses.
+                    </p>
+                    <a class="text-indigo-600 font-bold text-sm" href="">Read More</a>
+                </div>
+                <!-- card -->
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg my-3 md:my-10 p-5 flex flex-col gap-3">
+                    <img class="w-10" src="images/icon.png" alt="">
+                    <h1 class="font-medium text-lg dark:text-gray-100">FullStack Developer</h1>
+                    <p class="text-gray-400 dark:text-gray-100">
+                        I specialize in creating interactive websites for individuals and
+                        small businesses.
+                    </p>
+                    <a class="text-indigo-600 font-bold text-sm" href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+    <!-- Works Portfolio -->
+    <div id="works" class="dark:bg-slate-900 pt-5">
+        <div class="container mx-auto">
+            <div class="flex flex-col gap-3  items-center">
+                <!-- top -->
+                <h1 class="text-indigo-600 font-bold">PORTFOLIO</h1>
+                <h1 class="text-3xl dark:text-gray-100">Works And Projects</h1>
+                <p class="md:w-1/2 px-4 md:px-0 text-center text-gray-600 dark:text-gray-100">
+                    I made many project as front end and backend developer and i have 2 years experience in this field
+                    you can see my projects and works in this section.
+                </p>
+            </div>
+            <!-- bottom -->
+            <div class="h-9"></div>
+
+            <div class="p-5 sm:p-0 flex flex-wrap justify-between">
+                <!-- card -->
+                <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 p-5 m-1">
+                    <img src="images/Eyad.jpeg" alt="">
+                </div>
+                <!-- card -->
+                <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 p-5 m-1">
+                    <img src="images/Eyad.jpeg" alt="">
+                </div>
+                <!-- card -->
+                <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 p-5 m-1">
+                    <img src="images/Eyad.jpeg" alt="">
+                </div>
+                <!-- card -->
+                <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 p-5 m-1">
+                    <img src="images/Eyad.jpeg" alt="">
+                </div>
+                <!-- card -->
+                <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 p-5 m-1">
+                    <img src="images/Eyad.jpeg" alt="">
+                </div>
+                <!-- card -->
+                <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 p-5 m-1">
+                    <img src="images/Eyad.jpeg" alt="">
+                </div>
+                <!-- card -->
+                <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 p-5 m-1">
+                    <img src="images/Eyad.jpeg" alt="">
+                </div>
+                <!-- card -->
+                <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 p-5 m-1">
+                    <img src="images/Eyad.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact" class="dark:bg-slate-900 pt-5">
+        <div class="container mx-auto mt-16">
+            <div class="flex flex-col gap-3 items-center">
+                <!-- top -->
+                <h1 class="text-indigo-600 font-bold ">CONTACT</h1>
+                <h1 class="text-3xl dark:text-gray-100">Have a Question?</h1>
+                <p class="md:w-1/2 px-4 md:px-0 text-center text-gray-600 dark:text-gray-100">
+                    Do you have an idea? let's talk about it, you can contact together and make your idea real.
+                </p>
+                <!-- bottom -->
+                <form class="p-8 flex flex-col gap-5 items-center w-full" action="">
+                    <input
+                        class="p-2 w-full md:w-1/2 ring-1 dark:bg-slate-800 dark:text-white ring-indigo-300 rounded-sm"
+                        type="text" placeholder="Name">
+                    <input
+                        class="p-2 w-full md:w-1/2 ring-1 dark:bg-slate-800 dark:text-white ring-indigo-300 rounded-sm"
+                        type="email" placeholder="Email">
+                    <textarea
+                        class="p-2 w-full md:w-1/2 ring-1 dark:bg-slate-800 dark:text-white ring-indigo-300 rounded-sm"
+                        cols="30" rows="10" placeholder="Message..."></textarea>
+                    <input class="w-1/2 bg-indigo-600 text-white font-medium px-3 py-2 rounded-md cursor-pointer"
+                        type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+
+    <div class="w-full bg-gray-800 px-16">
+        <div class="container mx-auto w-full py-5 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <img src="images/logo.png" alt="Logo" class="w-8">
+                <span class="text-2xl font-bold text-white">Portfolio.</span>
+            </div>
+            <span class="hidden md:block font-medium text-white">
+                © 2023 Portfolio. Design with <span class="text-red-600"> ♥️ </span>by Eyad Ja'far.
+            </span>
+            <div class="flex gap-2">
+                <a href="https://www.facebook.com/eyad.sahoory.9/">
+                    <img class="w-6" src="images/facebook.png" alt="facebook">
+                </a>
+                <a href="https://www.linkedin.com/in/eyad-jafar-796231184">
+                    <img class="w-6" src="images/linkedin.png" alt="linkedin">
+                </a>
+                <a href="https://github.com/Eyadoo98">
+                    <img class="w-6" src="images/GitHub-Mark.png" alt="github">
+                </a>
+            </div>
+        </div>
+    </div>
 
     <script src="index.js"></script>
     <script src="autotyping.js"></script>
-
 </body>
 
 </html>
